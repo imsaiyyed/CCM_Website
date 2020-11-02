@@ -4,6 +4,7 @@
   "license": "MIT",
   "version": "1.0.0",
   "private": true,
+  "homepage": "http://imsaiyyed.github.io/CCM_Website/session/signin",
   "dependencies": {
     "@date-io/date-fns": "^1.3.6",
     "@material-ui/core": "^4.3.1",
@@ -59,6 +60,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -77,6 +80,6 @@
     "@babel/runtime": "^7.5.5",
     "axios-mock-adapter": "^1.17.0",
     "cross-env": "^5.2.0",
-    "gh-pages": "^2.1.1"
+    "gh-pages": "^2.2.0"
   }
 }

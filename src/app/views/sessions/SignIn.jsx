@@ -42,6 +42,8 @@ class SignIn extends Component {
     });
   };
   handleFormSubmit = event => {
+    this.props.history.push("/dashboard/analytics")
+
     this.props.loginWithEmailAndPassword({ ...this.state });
   };
   render() {
