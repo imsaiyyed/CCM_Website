@@ -777,7 +777,7 @@ class DealDetails extends React.Component {
           routeSegments={[
             { name: "Deals", path: "/deals" },
             { name: "Create/Edit Deal" },
-          ]}
+          ]} 
         />
           <Grid container spacing={3} style={{marginTop:10}}>
             <Box border={1} {...defaultProps}>
