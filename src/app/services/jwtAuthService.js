@@ -7,8 +7,8 @@ class JwtAuthService {
   user = {
     userId: "1",
     role: 'ADMIN',
-    displayName: "Jason Alexander",
-    email: "jasonalexander@gmail.com",
+    displayName: "Buyer",
+    email: "buyer@ccmllc.com",
     photoURL: "https://imsaiyyed.github.io/CCM_Website/assets/images/face-6.jpg",
     age: 25,
     token: "faslkhfh423oiu4h4kj432rkj23h432u49ufjaklj423h4jkhkjh"

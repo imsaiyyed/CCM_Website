@@ -8,6 +8,9 @@ const Analytics = MatxLoadable({
 const DealDetails = MatxLoadable({
   loader: () => import("./DealDetails")
 })
+// const DealDetails = MatxLoadable({
+//   loader: () => import("./DealDetails")
+// })
 
 const dealRoutes = [
   {
@@ -17,6 +20,12 @@ const dealRoutes = [
   },
   {
     path: "/deals/details",
+    component: DealDetails,
+    auth: authRoles.admin
+  }
+  ,
+  {
+    path: "/deals/createDeal",
     component: DealDetails,
     auth: authRoles.admin
   }

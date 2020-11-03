@@ -6,8 +6,20 @@ export const navigations = [
   },
   {
     name: "Deals",
-    path: "/deals/management",
-    icon: "trending_up"
+    // path: "/deals/management",
+    icon: "trending_up",
+    children: [
+      {
+        name: "All Deals",
+        path: "/deals/management",
+        iconText: "A"
+      },
+      {
+        name: "Create Deal",
+        path: "/deals/createDeal",
+        iconText: "B"
+      },
+    ]
   },
   {
     name: "Administration",

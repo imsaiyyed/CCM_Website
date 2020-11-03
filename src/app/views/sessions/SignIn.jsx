@@ -31,8 +31,8 @@ const styles = theme => ({
 
 class SignIn extends Component {
   state = {
-    email: "watson@example.com",
-    password: "testpass",
+    email: "buyer@ccmllc.com",
+    password: "espl@123",
     agreement: ""
   };
   handleChange = event => {
@@ -44,7 +44,7 @@ class SignIn extends Component {
   handleFormSubmit = event => {
     this.props.history.push("/dashboard/analytics")
 
-    this.props.loginWithEmailAndPassword({ ...this.state });
+    // this.props.loginWithEmailAndPassword({ ...this.state });
   };
   render() {
     let { email, password } = this.state;

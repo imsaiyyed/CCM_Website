@@ -1298,10 +1298,7 @@ const subscribarList = [
 const Deals = () => {
   const history = useHistory();
 
-  function showDetails(item){
-    history.push("/deals/details");
-    console.log(item)
-  }
+  
   function showVendor(cell, row) {
     return cell[0];
   }
@@ -1333,6 +1330,13 @@ const Deals = () => {
     nextPage: 'Next', // Next page button text
     firstPage: 'First', // First page button text
     lastPage: 'Last', // Last page button text
+    onRowClick:function(item){
+      history.push({ 
+        pathname: "/deals/details",
+        state: item
+       });
+      console.log(item)
+    },
     // // paginationShowsTotal: this.renderShowsTotal,  // Accept bool or function
     paginationPosition: 'bottom'  // default is bottom, top and both is all available
     // hideSizePerPage: true > You can hide the dropdown for sizePerPage
@@ -1346,7 +1350,7 @@ const Deals = () => {
             { name: "Deals", path: "/deals" },
           ]}
         />
-      <BootstrapTable data={ subscribarList } pagination={true} options={ options }>
+      <BootstrapTable data={ subscribarList } pagination={true} options={ options } >
           <TableHeaderColumn dataField='Deal Number' isKey={ true } filter={ { type: 'TextFilter', delay: 700 } }>Deal Number</TableHeaderColumn>
           <TableHeaderColumn dataField='Buyer Name'  filter={ { type: 'TextFilter', delay: 700 } }>Buyer Name</TableHeaderColumn>
            <TableHeaderColumn dataField='Status' dataFormat={showStatus} filter={ { type: 'TextFilter', delay: 700 } }>Status</TableHeaderColumn>
