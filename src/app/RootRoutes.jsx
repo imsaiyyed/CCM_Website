@@ -18,13 +18,13 @@ const redirectRoute = [
   {
     path: "/",
     exact: true,
-    component: () => <Redirect to="/session/signin" />
+    component: () => <Redirect to="/dashboard/analytics" />
   }
 ];
 
 const errorRoute = [
   {
-    component: () => <Redirect to="/session/404" />
+    component: () => <Redirect to="/session/signin" />
   }
 ];
 

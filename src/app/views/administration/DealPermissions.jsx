@@ -24,17 +24,17 @@ const useStyles = makeStyles(theme => ({
 }));
 const subscribarList = [
   {
-    Retrive: "john doe",
-    Create: "18 january, 2019",
-    Update: 1000,
-    Delete: "close",
+    Retrive: true,
+    Create: true,
+    Update:true,
+    Delete: true,
     Role: "Admin",
   },
   {
-    Retrive: "john doe",
-    Create: "18 january, 2019",
-    Update: 1000,
-    Delete: "close",
+    Retrive: true,
+    Create: true,
+    Update:true,
+    Delete: true,
     Role: "Employee",
   },
 ];
@@ -71,16 +71,16 @@ const DealPermissions = () => {
                     {subscriber.Role}
                   </TableCell>
                   <TableCell className="px-0 capitalize" align="left">
-                    <Checkbox checked={true} />
+                    <Checkbox  />
                   </TableCell>
                   <TableCell className="px-0 capitalize" align="left">
-                    <Checkbox checked={true} />
+                    <Checkbox  />
                   </TableCell>
                   <TableCell className="px-0 capitalize">
-                    <Checkbox checked={true} />
+                    <Checkbox />
                   </TableCell>
                   <TableCell className="px-0 capitalize">
-                    <Checkbox checked={true} />
+                    <Checkbox  />
                   </TableCell>
                 </TableRow>
               ))}
