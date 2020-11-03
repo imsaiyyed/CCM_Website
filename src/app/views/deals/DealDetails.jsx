@@ -26,6 +26,8 @@ import Select from "@material-ui/core/Select";
 import Divider from "@material-ui/core/Divider";
 import Card from "@material-ui/core/Card";
 import axios from "axios";
+import { Breadcrumb, SimpleCard } from "matx";
+
 import { withStyles } from "@material-ui/core/styles";
 const styles = (theme) => ({
   formControl: {
@@ -769,8 +771,15 @@ class DealDetails extends React.Component {
 
     return (
       <div className="pb-86 pt-30 px-30 ">
+         
         <div className={classes.root}>
-          <Grid container spacing={3}>
+        <Breadcrumb 
+          routeSegments={[
+            { name: "Deals", path: "/deals" },
+            { name: "Create/Edit Deal" },
+          ]}
+        />
+          <Grid container spacing={3} style={{marginTop:10}}>
             <Box border={1} {...defaultProps}>
               <Grid
                 container
